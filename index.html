@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Contraseña</title>
+</head>
+<body>
+    <h1>Verificación de Contraseña</h1>
+    <label>Ingrese una contraseña: </label>
+    <input type="password" id="contrasena"><br><br>
+    
+    <button onclick="verificarContrasena()">Verificar</button><br><br>
+    
+    <p id="mensaje"></p>
+    
+    <script>
+        function verificarContrasena() {
+            // Obtener la contraseña ingresada por el usuario
+            var contrasena = document.getElementById("contrasena").value;
+            
+            // Verificar si la contraseña cumple con los criterios
+            if (contrasena.length >= 8 && /[A-Z]/.test(contrasena) && /[0-9]/.test(contrasena)) {
+                // La contraseña es válida
+                document.getElementById("mensaje").innerHTML = "¡La contraseña es válida!";
+            } else {
+                // La contraseña no cumple con los criterios
+                document.getElementById("mensaje").innerHTML = "La contraseña no cumple con los criterios de seguridad.";
+            }
+        }
+    </script>
+</body>
+</html>
