@@ -15,9 +15,16 @@
     <p id="mensaje"></p>
     
     <script>
+
+        /**
+         * Autor: Diego Alonso Molina
+         * GitHub: 
+         * 
+        **/
+
         function verificarContrasena() {
             // Obtener la contraseña ingresada por el usuario
-            var contrasena = document.getElementById("contrasena").value;
+            let contrasena = document.getElementById("contrasena").value;
             
             // Verificar si la contraseña cumple con los criterios
             if (contrasena.length >= 8 && /[A-Z]/.test(contrasena) && /[0-9]/.test(contrasena)) {

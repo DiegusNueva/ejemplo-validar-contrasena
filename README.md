@@ -1,3 +1,4 @@
 # Ejemplo de una validación sencilla de contraseña
 
-# Diego Alonso Molina (Full Stack Developer)
+**Autor:** Diego Alonso Molina  
+**Profesión:** Gopher-Infused Full Stack Developer
